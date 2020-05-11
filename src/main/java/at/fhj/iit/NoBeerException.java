@@ -5,9 +5,7 @@ public class NoBeerException extends Exception {
     String liquidName;
     public NoBeerException (Liquid liquid) {
         this.liquidName=liquid.getName();
-
     }
-
     public String toString() {
         return String.format("Liquid " + this.liquidName + " is no Beer!");
     }
