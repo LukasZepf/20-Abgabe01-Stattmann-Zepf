@@ -27,6 +27,8 @@ public class Liquid {
      * Creates new liquid with given name, volume and
      * alcoholPercent
      *
+     * @author Lukas Zepf
+     *
      * @param name name of liquid
      * @param volume volume of liquid
      * @param alcoholPercent of liquid
@@ -104,7 +106,7 @@ public class Liquid {
     /**
      * Setter for isBeer
      *
-     * @param if liquid is beer
+     * @param isBeer liquid is beer
      */
     public void setIsBeer(boolean isBeer) {
         this.isBeer = isBeer;
