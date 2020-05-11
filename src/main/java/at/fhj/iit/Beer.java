@@ -18,6 +18,7 @@ public class Beer extends at.fhj.iit.SimpleDrink {
     }
     /**
      * Default constructor
+     *
      * @param name of the drink
      * @param l name of the liquid
      */
@@ -109,6 +110,4 @@ public class Beer extends at.fhj.iit.SimpleDrink {
     public void setIngredients(List<Liquid> ingredients) {
         this.ingredients = ingredients;
     }
-
-
 }

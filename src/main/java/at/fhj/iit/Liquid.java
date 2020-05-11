@@ -111,5 +111,4 @@ public class Liquid {
     public void setIsBeer(boolean isBeer) {
         this.isBeer = isBeer;
     }
-
 }
