@@ -34,8 +34,8 @@ public class Beer extends at.fhj.iit.SimpleDrink {
      * @param ingredients of the beer
      *
      */
-    public Beer(String name, Liquid l, Color color, List<Liquid> ingredients) throws NoBeerException {
-        super(name, l);
+    public Beer(Liquid l, Color color, List<Liquid> ingredients) throws NoBeerException {
+        super(l.getName(), l);
         this.color = color;
         this.ingredients = ingredients;
         for (int i=0; i<this.ingredients.size(); i++) {
