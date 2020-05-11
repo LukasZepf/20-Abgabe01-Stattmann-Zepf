@@ -18,8 +18,8 @@ public class LiquidTest {
 	@BeforeEach
 	void setup() {
 		// SETUP PHASE
-		lN = new Liquid("Wasser", 0.3, 0);
-		lA = new Liquid("Wein", 0.125, 13);
+		lN = new Liquid("Wasser", 0.3, 0, true);
+		lA = new Liquid("Wein", 0.125, 13, true);
 	}
 
 	@Test

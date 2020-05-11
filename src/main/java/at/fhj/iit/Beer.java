@@ -115,7 +115,7 @@ public class Beer extends at.fhj.iit.SimpleDrink {
      *
      * @return color of beer
      */
-    private Color getColor (){
+    public Color getColor () {
         return color;
     }
 }
