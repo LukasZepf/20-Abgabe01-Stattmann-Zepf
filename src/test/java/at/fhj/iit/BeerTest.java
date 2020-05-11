@@ -34,7 +34,7 @@ public class BeerTest {
     public void testConstructorLiquid() {
         assertEquals(l1.getName(), "Bier");
         assertEquals(l1.getVolume(), 0.3, 0.001);
-        assertEquals(l1.getAlcoholPercent(), 0, 0.001);
+        assertEquals(l1.getAlcoholPercent(), 5, 0.001);
         assertEquals(l1.getIsBeer(), true);
     }
 
