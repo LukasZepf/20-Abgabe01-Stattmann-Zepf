@@ -37,9 +37,9 @@ public class Beer extends at.fhj.iit.SimpleDrink {
         super(name, l);
         this.color = color;
         this.ingredients = ingredients;
-        for (int i=0; i<ingredients.size(); i++) {
-            if (ingradients[i].getIsBeer() == false) {
-                throw new NoBeerException(ingradients[i]);
+        for (int i=0; i<this.ingredients.size(); i++) {
+            if (ingredients.get(i).getIsBeer() == false) {
+                throw new NoBeerException(ingredients.get(i));
             }
         }
 
