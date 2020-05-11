@@ -19,17 +19,24 @@ public class Liquid {
     private double alcoholPercent;
 
     /**
+     * isBeer (is true if liquid is beer)
+     */
+    private boolean isBeer;
+
+    /**
      * Creates new liquid with given name, volume and
      * alcoholPercent
      *
      * @param name name of liquid
      * @param volume volume of liquid
      * @param alcoholPercent of liquid
+     * @param isBeer of liquid
      */
-    public Liquid(String name, double volume, double alcoholPercent) {
+    public Liquid(String name, double volume, double alcoholPercent, boolean isBeer) {
         this.name = name;
         this.volume = volume;
         this.alcoholPercent = alcoholPercent;
+        this.isBeer = isBeer;
     }
 
     /**
@@ -84,4 +91,23 @@ public class Liquid {
     public void setAlcoholPercent(double alcoholPercent) {
         this.alcoholPercent = alcoholPercent;
     }
+
+    /**
+     * Getter for isBeer
+     *
+     * @return boolean if liquid is beer
+     */
+    public boolean getIsBeer() {
+        return isBeer;
+    }
+
+    /**
+     * Setter for isBeer
+     *
+     * @param if liquid is beer
+     */
+    public void setIsBeer(boolean isBeer) {
+        this.isBeer = isBeer;
+    }
+
 }
