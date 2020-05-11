@@ -13,3 +13,16 @@ Our Project consists 2 classes, the superclass includes the information and meth
 
 ### Implementation
 We created a subclass which extends the superclass SimpleDrink and is called Beer. It contains a list of Liquids, and moreover it is able to check if the drink is a beer or not. In case of not being a beer, the NoBeerException gets throwen.
+
+### Code Block of the Beer Constructor
+<code>
+  public Beer(String name, Liquid l, Color color, List<Liquid> ingredients) throws NoBeerException {
+        super(name, l);
+        this.color = color;
+        this.ingredients = ingredients;
+        for (int i=0; i<this.ingredients.size(); i++) {
+            if (ingredients.get(i).getIsBeer() == false) {
+                throw new NoBeerException(ingredients.get(i));
+            }
+        }
+</code>
