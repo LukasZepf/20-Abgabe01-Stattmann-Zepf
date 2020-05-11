@@ -110,4 +110,12 @@ public class Beer extends at.fhj.iit.SimpleDrink {
     public void setIngredients(List<Liquid> ingredients) {
         this.ingredients = ingredients;
     }
+    /**
+     * returns color of the beer
+     *
+     * @return color of beer
+     */
+    private Color getColor (){
+        return color;
+    }
 }
