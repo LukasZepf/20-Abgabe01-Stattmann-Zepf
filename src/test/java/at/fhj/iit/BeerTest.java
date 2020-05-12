@@ -88,4 +88,13 @@ public class BeerTest {
         assertEquals(b2.getIngredients().get(1), l2);
     }
 
+    @Test
+    @DisplayName("Testing NoBeerException")
+    public void testNoBeerException() throws NoBeerException {
+        List<Liquid> ingredients = new ArrayList<Liquid>();
+        ingredients.add(l1);
+        ingredients.add(l2);
+        b1 = new Beer(l1, Beer.Color.PALE, ingredients);
+    }
+
 }
