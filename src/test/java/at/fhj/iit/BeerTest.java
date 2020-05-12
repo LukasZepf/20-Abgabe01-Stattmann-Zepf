@@ -12,6 +12,10 @@ public class BeerTest {
     private Beer b1, b2;
     private Liquid l1, l2, l3;
 
+    /**
+     * inits liquids for the tests below like beer and other drinks.
+     */
+
     @BeforeEach
     void setup() throws NoBeerException {
         // SETUP PHASE
@@ -29,6 +33,10 @@ public class BeerTest {
         b2 = new Beer(l3, Beer.Color.DARK, ingredients2);
     }
 
+    /**
+     * tests the constructor of the Liquid.java class
+     */
+
     @Test
     @DisplayName("Testing constructor Liquid")
     public void testConstructorLiquid() {
@@ -37,6 +45,10 @@ public class BeerTest {
         assertEquals(l1.getAlcoholPercent(), 5, 0.001);
         assertEquals(l1.getIsBeer(), true);
     }
+
+    /**
+     * tests the constructor of the Beer.java class
+     */
 
     @Test
     @DisplayName("Testing constructor Beer")

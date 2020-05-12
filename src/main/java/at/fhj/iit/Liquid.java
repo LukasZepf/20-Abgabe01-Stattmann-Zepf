@@ -28,6 +28,7 @@ public class Liquid {
      * alcoholPercent
      *
      * @author Lukas Zepf
+     * @author Philipp Stattmann
      *
      * @param name name of liquid
      * @param volume volume of liquid

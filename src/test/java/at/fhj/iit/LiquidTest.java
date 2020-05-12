@@ -54,6 +54,5 @@ public class LiquidTest {
 	public void testAlcoholPercentSetter(){
 		lN.setAlcoholPercent(3.2);
 		assertEquals(lN.getAlcoholPercent(), 3.2, 0.001);
-
 	}
 }
