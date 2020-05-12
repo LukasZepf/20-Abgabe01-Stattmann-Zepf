@@ -23,8 +23,8 @@ public class BeerTest {
         ingredients.add(l1);
         ingredients.add(l2);
         List<Liquid> ingredients2 = new ArrayList<Liquid>();
-        ingredients.add(l1);
-        ingredients.add(l3);
+        ingredients2.add(l1);
+        ingredients2.add(l3);
         //b1 = new Beer(l1, Beer.Color.PALE, ingredients);
         b2 = new Beer(l3, Beer.Color.DARK, ingredients2);
     }
@@ -43,9 +43,49 @@ public class BeerTest {
     public void testConstructorBeer() {
         assertEquals(b2.getName(), "Bier");
         assertEquals(b2.getColor(), Beer.Color.DARK);
-        //List<Liquid> ingredients = b1.getIngredients();
-        //assertEquals(ingredients.get(0), l1);
+        List<Liquid> ingredients = b2.getIngredients();
+        assertEquals(ingredients.get(0), l1);
+        assertEquals(ingredients.get(1), l3);
     }
 
+    @Test
+    @DisplayName("Test name setter")
+    public void testNameSetter(){
+        l1.setName("Test1");
+        assertEquals(l1.getName(), "Test1");
+    }
+
+    @Test
+    @DisplayName("Testing volume setter")
+    public void testVolumeSetter(){
+        l1.setVolume(1.5);
+        assertEquals(l1.getVolume(), 1.5, 0.001);
+    }
+
+    @Test
+    @DisplayName("Testing alcoholPercent setter")
+    public void testAlcoholPercentSetter(){
+        l1.setVolume(9);
+        assertEquals(l1.getVolume(), 9, 0.001);
+    }
+
+    @Test
+    @DisplayName("Testing isBeer setter")
+    public void testIsBeerSetter(){
+        l1.setIsBeer(false);
+        assertEquals(l1.getIsBeer(), false);
+
+    }
+
+    @Test
+    @DisplayName("Testing Ingredient setter")
+    public void testIngredientsSetter() {
+        List<Liquid> ingredients = new ArrayList<Liquid>();
+        ingredients.add(l1);
+        ingredients.add(l2);
+        b2.setIngredients(ingredients);
+        assertEquals(b2.getIngredients().get(0), l1);
+        assertEquals(b2.getIngredients().get(1), l2);
+    }
 
 }

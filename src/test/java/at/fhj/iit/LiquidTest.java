@@ -50,7 +50,7 @@ public class LiquidTest {
 
 	}
 	@Test
-	@DisplayName("Testing alcoholPercent setters")
+	@DisplayName("Testing alcoholPercent setter")
 	public void testAlcoholPercentSetter(){
 		lN.setAlcoholPercent(3.2);
 		assertEquals(lN.getAlcoholPercent(), 3.2, 0.001);
